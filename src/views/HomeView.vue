@@ -21,8 +21,16 @@ export default {
     data(){
 
     },
-    methods:{
-
+    mounted() {
+      this.test()
+    },
+  methods:{
+      test(){
+        // 测试请求
+        this.$http.get('/test/login').then( res => {
+          console.log(res)
+        })
+      }
     }
 }
 </script>
