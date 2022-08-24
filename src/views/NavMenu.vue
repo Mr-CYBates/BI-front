@@ -23,8 +23,9 @@
         </el-submenu>
       </el-submenu>
       <el-menu-item index="3" >数据集</el-menu-item>
-      <el-menu-item index="4"><a href="https://www.ele.me" target="_blank">项目中心</a></el-menu-item>
-      <el-menu-item index="5" >用户分群</el-menu-item>
+      <el-menu-item index="4" @click="goDataSource()">数据源</el-menu-item>
+      <el-menu-item index="5"><a href="https://www.ele.me" target="_blank">项目中心</a></el-menu-item>
+      <el-menu-item index="6" >用户分群</el-menu-item>
     </el-menu>
   </div>
 </template>
@@ -33,14 +34,18 @@
 export default {
   data() {
     return {
-      activeIndex: '1',
-      activeIndex2: '1',
+      activeIndex: '0',
+      activeIndex2: '0',
     };
   },
   methods: {
     handleSelect(key, keyPath) {
       console.log(key, keyPath);
-    }
+    },
+      goDataSource(){
+        this.$router.push('/datasourceform')
+        this.$router.go(0)
+      }
   }
 }
 </script>

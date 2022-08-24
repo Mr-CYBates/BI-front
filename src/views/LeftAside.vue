@@ -24,6 +24,10 @@
             <i class="el-icon-data-line"></i>
             <span slot="title">指标</span>
           </el-menu-item>
+          <el-menu-item index="4" >
+            <i class="el-icon-coin"></i>
+            <span slot="title">数据源</span>
+          </el-menu-item>
         </el-menu>
       </el-aside>
     </el-container>

@@ -9,9 +9,10 @@
 
 <script>
 import NavMenu from "@/views/NavMenu.vue";
-import LeftAside from "@/views/LeftAside";
+// import LeftAside from "@/views/LeftAside";
 export default {
-  components:{NavMenu, LeftAside}
+  components:{NavMenu}
+
 }
 </script>
 
